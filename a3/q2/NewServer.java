@@ -1,8 +1,12 @@
+//Andrew Buchanan
+//Scott Martin
+
 import java.net.*;
 import java.io.*;
 
 class NewServer implements Runnable
 {
+	//initialize global variables
 	private String line;
 	private int exit;
 	private Socket client;
@@ -14,10 +18,12 @@ class NewServer implements Runnable
 	
 	public void run()
 	{
+		//initialize variables
 		String line;
 		int exit=0;
 		BufferedReader bin=null;
 		PrintWriter pout=null;
+		
 		try 
 		{
 			while (exit==0)
@@ -28,8 +34,6 @@ class NewServer implements Runnable
 
 				line = bin.readLine();
 
-				
-
 				pout.println("Server: "+line);
 				
 				System.out.println(line);
@@ -39,11 +43,12 @@ class NewServer implements Runnable
 					exit=1;	
 				}
 			}
-			client.close();
-	}
-	catch (IOException ioe)
+				client.close();
+	     }
+		// IOException is thrown
+	    catch (IOException ioe)
 		{
 			System.err.println(ioe);	
 		}
-		}
+	}
 }

@@ -21,6 +21,7 @@ public class EchoServer
 				thrd.start();
 			}
 		}
+		// IOException is thrown
 		catch (IOException ioe)
 		{
 			System.err.println(ioe);	
