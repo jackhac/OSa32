@@ -58,6 +58,7 @@ public class EchoClient
 				//close connection to server once exit loop
 				sock.close();
 			}
+			// IOException is thrown
 			catch (IOException ioe)
 			{
 				System.err.println(ioe);	
