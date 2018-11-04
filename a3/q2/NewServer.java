@@ -40,8 +40,9 @@ class NewServer implements Runnable
 				}
 			}
 			client.close();
-	}
-	catch (IOException ioe)
+	        }
+		// IOException is thrown
+	        catch (IOException ioe)
 		{
 			System.err.println(ioe);	
 		}
