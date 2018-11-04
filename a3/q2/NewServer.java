@@ -43,6 +43,7 @@ class NewServer implements Runnable
 					exit=1;	
 				}
 			}
+<<<<<<< HEAD
 				client.close();
 	     }
 		// IOException is thrown
@@ -51,4 +52,14 @@ class NewServer implements Runnable
 			System.err.println(ioe);	
 		}
 	}
+=======
+			client.close();
+	        }
+		// IOException is thrown
+	        catch (IOException ioe)
+		{
+			System.err.println(ioe);	
+		}
+		}
+>>>>>>> 8802683a40a6307f0a874fa3941c1c01bbb55849
 }

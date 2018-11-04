@@ -32,7 +32,11 @@ int main(int argc, char *argv[])
 		
 	}
 	
+<<<<<<< HEAD
  	//thread1
+=======
+ 	
+>>>>>>> 8802683a40a6307f0a874fa3941c1c01bbb55849
     pthread_create(&thread1_id, NULL, thread1, NULL); 
     pthread_join(thread1_id, NULL); 
 	//thread2
