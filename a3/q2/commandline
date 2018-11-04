@@ -1,0 +1,5 @@
+commandline
+
+javac *.java
+java EchoServer
+java EchoClient localhost
