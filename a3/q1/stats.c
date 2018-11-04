@@ -13,7 +13,7 @@ int minNum=0;
 
 int main(int argc, char *argv[])
 {
-	
+	// This is where the threads are declared
 	pthread_t thread1_id, thread2_id, thread3_id; 
 	
 	if (argc!=8)
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		
 	}
 	
-	
+ 	
     pthread_create(&thread1_id, NULL, thread1, NULL); 
     pthread_join(thread1_id, NULL); 
 
